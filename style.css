@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color:pink;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    display: flex;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navbar li a {
+    text-decoration: none;
+    padding: 15px 10px;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropdownButton {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.dropdownContent a {
+    float: none;
+    padding: 10px 15px;
+    display: block;
+    text-align: left;
+}
+
+.dropdownContent a:hover {
+    background-color: black;
+    color: pink;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.container {
+    text-align: left;
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title {
+    color: indigo;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.image-container {
+    width: 33.33%
+}
+
+.image-container img {
+    width: 150px
+}
+
+.button {
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: pink;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.column {
+    float: left;
+    width: 31.3%;
+    padding: 15px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 640px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.footer {
+    text-align: center;
+    background-color: pink;
+    padding: 20px 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
