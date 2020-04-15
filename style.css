@@ -109,6 +109,15 @@ a {
     }
 }
 
+input[type=text] {
+    width: 94%;
+    padding: 13px 20px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    border: 2px solid silver;
+    outline: none;
+}
+
 .footer {
     text-align: center;
     background-color: pink;
